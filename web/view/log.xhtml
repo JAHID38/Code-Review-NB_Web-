@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<head>
+    <TITLE>Login</TITLE>
+</head>
+
+<body>
+
+<br></br>
+#{logController.log.withErrorMessage}
+<br></br>
+<BR>Please enter your user name and password.</BR>
+<h:form method="post">
+
+    <br></br>
+    User Name:
+    <h:inputText value="#{logController.log.userName}"/>
+    <br></br>
+    Password:
+    <h:inputSecret value="#{logController.log.pass}"/>
+    <br></br>
+    <h:commandButton value="Submit" action="#{logController.Login}"/>
+
+</h:form>
+</body>
+
+</html>
