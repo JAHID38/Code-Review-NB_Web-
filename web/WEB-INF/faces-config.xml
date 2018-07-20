@@ -17,4 +17,19 @@
             <to-view-id>/view/log.xhtml</to-view-id>
         </navigation-case>
     </navigation-rule>
+
+    <navigation-rule>
+        <from-view-id>/view/show.xhtml</from-view-id>
+        <navigation-case>
+            <from-action>#{show.logout}</from-action>
+            <from-outcome>logout</from-outcome>
+            <to-view-id>/view/log.xhtml</to-view-id>
+        </navigation-case>
+
+        <navigation-case>
+            <from-action>#{show.shopping}</from-action>
+            <from-outcome>shopping</from-outcome>
+            <to-view-id>/view/bk.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
 </faces-config>
